@@ -1,9 +1,9 @@
-import { toast as sonnerToast } from "sonner";
+import { toast } from "sonner";
 
 export const useToast = () => {
   return {
     toast: ({ title, description }: { title: string; description?: string }) => {
-      sonnerToast(title, {
+      toast(title, {
         description,
       });
     },
