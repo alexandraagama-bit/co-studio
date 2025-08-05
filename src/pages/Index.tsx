@@ -1,13 +1,20 @@
-// Update this page (the content is just a fallback if you fail to update the page)
+import React from 'react';
+import { Hero, Tagline, ComingSoon, Footer } from '@/components/LandingPage';
 
 const Index = () => {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-background">
-      <div className="text-center">
-        <h1 className="text-4xl font-bold mb-4">Welcome to Your Blank App</h1>
-        <p className="text-xl text-muted-foreground">Start building your amazing project here!</p>
-      </div>
-    </div>
+    <main className="relative w-screen h-screen overflow-hidden bg-[#EBEBEB]">
+      <img
+        src="https://api.builder.io/api/v1/image/assets/TEMP/f1df54cd6cc4c722dcc9c7c35c684263431aa7a7?width=3154"
+        alt="CO+ Studio architectural background"
+        className="absolute w-full h-full object-cover shrink-0 left-0 top-0"
+      />
+      
+      <Hero />
+      <Tagline />
+      <ComingSoon />
+      <Footer />
+    </main>
   );
 };
 
