@@ -18,10 +18,12 @@ export default {
 			}
 		},
 		extend: {
-			fontFamily: {
-				'roboto-thin': ['Roboto', 'sans-serif'],
-				'roboto-condensed-extralight': ['Roboto Condensed', 'sans-serif'],
-			},
+      fontFamily: {
+        'roboto-thin': ['Roboto', 'sans-serif'],
+        'roboto-light': ['Roboto', 'sans-serif'],
+        'roboto-condensed-extralight': ['Roboto Condensed', 'sans-serif'],
+        'roboto-condensed-thin': ['Roboto Condensed', 'sans-serif'],
+      },
 			colors: {
 				border: 'hsl(var(--border))',
 				input: 'hsl(var(--input))',
