@@ -7,13 +7,7 @@ export const Tagline: React.FC = () => {
       aria-label="Company tagline"
     >
       <p className="font-roboto-condensed-extralight font-extralight text-lg text-[rgba(251,251,251,1)]">
-        crafting spaces
-      </p>
-      <p className="font-roboto-condensed-extralight font-extralight text-lg text-[rgba(251,251,251,1)]">
-        for
-      </p>
-      <p className="font-roboto-condensed-extralight font-extralight text-lg text-[rgba(251,251,251,1)]">
-        inspiring people
+        crafting spaces for inspiring people
       </p>
     </section>
   );
