@@ -9,9 +9,3 @@ export const useToast = () => {
     },
   };
 };
-
-export const toast = ({ title, description }: { title: string; description?: string }) => {
-  sonnerToast(title, {
-    description,
-  });
-};
