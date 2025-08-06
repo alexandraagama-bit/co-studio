@@ -3,7 +3,7 @@ import { ContactForm } from './ContactForm';
 
 export const Footer: React.FC = () => {
   return (
-    <footer className="absolute left-0 right-0 flex justify-between items-center p-4" style={{ top: 'calc(110vh - 70px)' }}>
+    <footer className="absolute left-0 right-0 flex justify-between items-center p-4 mt-[210px]">
       <div className="text-white text-center">
         <p className="font-roboto-light font-light text-[15px] text-white">
           architecture &amp; design
