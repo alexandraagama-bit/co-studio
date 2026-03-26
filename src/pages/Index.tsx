@@ -12,7 +12,7 @@ const Index = () => {
       
       <Hero />
       <Tagline />
-      <ComingSoon />
+      
       <Footer />
     </main>
   );
