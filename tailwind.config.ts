@@ -23,6 +23,7 @@ export default {
         'roboto-light': ['Roboto', 'sans-serif'],
         'roboto-condensed-extralight': ['Roboto Condensed', 'sans-serif'],
         'roboto-condensed-thin': ['Roboto Condensed', 'sans-serif'],
+        'roboto-condensed-light': ['Roboto Condensed', 'sans-serif'],
       },
 			colors: {
 				border: 'hsl(var(--border))',
