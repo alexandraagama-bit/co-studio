@@ -7,7 +7,7 @@ const Index = () => {
       <img
         src="/images/background.jpg"
         alt="CO+ Studio architectural background"
-        className="absolute w-full min-h-[120vh] object-cover shrink-0 left-0 top-0 max-sm:object-center"
+        className="absolute w-full h-full object-cover shrink-0 left-0 top-0"
       />
       
       <Footer />
