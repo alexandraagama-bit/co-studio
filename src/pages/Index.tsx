@@ -1,16 +1,68 @@
-import React from 'react';
-import { Footer } from '@/components/LandingPage';
+import React, { useEffect, useState } from "react";
+
+const images = [
+  "/images/hero-01.webp",
+  "/images/hero-02.jpg",
+  "/images/hero-03.webp",
+  "/images/hero-04.webp",
+  "/images/hero-05.webp",
+  "/images/hero-06.webp",
+];
 
 const Index = () => {
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrent((prev) => (prev + 1) % images.length);
+    }, 3000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
-    <main className="relative w-screen min-h-screen bg-[#EBEBEB] overflow-x-hidden">
-      <img
-        src="/images/background.jpg"
-        alt="CO+ Studio architectural background"
-        className="absolute w-full h-full object-cover shrink-0 left-0 top-0"
-      />
-      
-      <Footer />
+    <main className="relative w-screen h-screen overflow-hidden bg-black">
+      {/* Background slideshow */}
+      <div className="absolute inset-0">
+        {images.map((image, index) => (
+          <img
+            key={image}
+            src={image}
+            alt=""
+            className={`absolute inset-0 w-full h-full object-cover transition-opacity duration-1000 ${
+              index === current ? "opacity-100" : "opacity-0"
+            }`}
+          />
+        ))}
+      </div>
+
+      {/* Dark overlay */}
+      <div className="absolute inset-0 bg-black/30" />
+
+      {/* Centered brand name */}
+      <div className="absolute inset-0 flex items-center justify-center">
+        <h1 className="font-roboto-condensed-light font-light text-[24px] text-white max-sm:text-[20px] max-[375px]:text-[18px]">
+          co+ studio
+        </h1>
+      </div>
+
+      {/* Footer */}
+      <footer className="absolute bottom-0 left-0 right-0 p-6 flex justify-between items-end text-white/70">
+        <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-base font-thin">
+          architecture &amp; design
+        </p>
+        <div className="text-right">
+          <a
+            href="mailto:info@coplusstudio.com"
+            className="font-roboto-condensed-extralight font-extralight text-[18px] text-[rgba(251,251,251,1)] max-sm:text-[14px] max-[375px]:text-[12px] hover:opacity-80 transition-opacity"
+          >
+            info@coplusstudio.com
+          </a>
+          <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-sm font-thin mt-1">
+            portugal // norway // egypt
+          </p>
+        </div>
+      </footer>
     </main>
   );
 };
