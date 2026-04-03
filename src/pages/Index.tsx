@@ -46,8 +46,8 @@ const Index = () => {
         </h1>
       </div>
 
-      {/* Footer */}
-      <footer className="absolute bottom-0 left-0 right-0 p-6 text-white/70">
+      {/* Footer - positioned below the fold */}
+      <footer className="relative mt-[calc(100vh-6rem+3cm)] p-6 text-white/70">
         <div className="flex justify-between items-end">
           <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm">
             architecture &amp; design
