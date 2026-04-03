@@ -22,8 +22,8 @@ const Index = () => {
 
   return (
     <main className="relative w-screen min-h-screen bg-black">
-      {/* Background slideshow */}
-      <div className="absolute inset-0">
+      {/* Background slideshow - fixed to viewport */}
+      <div className="fixed inset-0">
         {images.map((image, index) => (
           <img
             key={image}
@@ -37,17 +37,20 @@ const Index = () => {
       </div>
 
       {/* Dark overlay */}
-      <div className="absolute inset-0 bg-black/30" />
+      <div className="fixed inset-0 bg-black/30" />
 
       {/* Centered brand name */}
-      <div className="absolute inset-0 flex items-center justify-center">
+      <div className="fixed inset-0 flex items-center justify-center">
         <h1 className="font-roboto-condensed-light font-light text-[24px] text-white max-sm:text-[20px] max-[375px]:text-[18px]">
           co+ studio
         </h1>
       </div>
 
-      {/* Footer - positioned below the fold */}
-      <footer className="relative mt-[calc(100vh-6rem+3cm)] p-6 text-white/70">
+      {/* Spacer to push footer below the fold */}
+      <div className="h-[calc(100vh+3cm)]" />
+
+      {/* Footer */}
+      <footer className="relative p-6 text-white/70">
         <div className="flex justify-between items-end">
           <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm">
             architecture &amp; design
