@@ -47,19 +47,21 @@ const Index = () => {
       </div>
 
       {/* Footer */}
-      <footer className="absolute bottom-0 left-0 right-0 p-6 flex flex-col items-center text-center text-white/70">
-        <a
-          href="mailto:info@coplusstudio.com"
-          className="font-roboto-condensed-extralight font-extralight text-[18px] text-[rgba(251,251,251,1)] max-sm:text-[14px] max-[375px]:text-[12px] hover:opacity-80 transition-opacity"
-        >
-          info@coplusstudio.com
-        </a>
-        <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-base font-thin mt-2">
+      <footer className="absolute bottom-0 left-0 right-0 p-6 flex justify-between items-end text-white/70">
+        <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-base font-thin">
           architecture &amp; design
         </p>
-        <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-sm font-thin mt-1">
-          portugal // norway // egypt
-        </p>
+        <div className="text-right">
+          <a
+            href="mailto:info@coplusstudio.com"
+            className="font-roboto-condensed-extralight font-extralight text-[18px] text-[rgba(251,251,251,1)] max-sm:text-[14px] max-[375px]:text-[12px] hover:opacity-80 transition-opacity"
+          >
+            info@coplusstudio.com
+          </a>
+          <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-sm font-thin mt-1">
+            portugal // norway // egypt
+          </p>
+        </div>
       </footer>
     </main>
   );
