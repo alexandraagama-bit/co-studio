@@ -21,7 +21,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="relative w-screen h-screen overflow-hidden bg-black">
+    <main className="relative w-screen min-h-screen bg-black">
       {/* Background slideshow */}
       <div className="absolute inset-0">
         {images.map((image, index) => (
