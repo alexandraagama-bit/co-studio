@@ -48,18 +48,16 @@ const Index = () => {
 
       {/* Footer */}
       <footer className="absolute bottom-0 left-0 right-0 p-6 text-white/70">
-        <div className="flex justify-center mb-2">
+        <div className="flex justify-between items-end">
+          <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-base font-thin">
+            architecture &amp; design
+          </p>
           <a
             href="mailto:info@coplusstudio.com"
             className="font-roboto-condensed-extralight font-extralight text-[18px] text-[rgba(251,251,251,1)] max-sm:text-[14px] max-[375px]:text-[12px] hover:opacity-80 transition-opacity"
           >
             info@coplusstudio.com
           </a>
-        </div>
-        <div className="flex justify-between items-end">
-          <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-base font-thin">
-            architecture &amp; design
-          </p>
           <p className="font-roboto-condensed-thin text-neutral-50 opacity-60 text-sm font-thin">
             portugal // norway // egypt
           </p>
