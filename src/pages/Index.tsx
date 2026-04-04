@@ -61,7 +61,7 @@ const Index = () => {
           >
             info@coplusstudio.com
           </a>
-          <p className="text-neutral-50 opacity-60 text-sm max-sm:text-[10px] font-thin font-sans">
+          <p className="text-neutral-50 opacity-60 text-sm max-sm:text-[10px] max-[375px]:text-[9px] font-thin font-sans">
             portugal // norway // egypt
           </p>
         </div>
