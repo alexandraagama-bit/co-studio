@@ -21,7 +21,7 @@ const Index = () => {
   }, []);
 
   return (
-    <main className="relative w-screen min-h-screen bg-black">
+    <main className="relative w-screen min-h-screen bg-black overflow-x-hidden">
       {/* Background slideshow - fixed to viewport */}
       <div className="fixed inset-0">
         {images.map((image, index) => (
