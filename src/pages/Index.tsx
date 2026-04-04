@@ -57,7 +57,7 @@ const Index = () => {
           </p>
           <a
             href="mailto:info@coplusstudio.com"
-            className="text-[rgba(251,251,251,1)] hover:opacity-80 transition-opacity font-sans font-light text-sm"
+            className="text-[rgba(251,251,251,1)] hover:opacity-80 transition-opacity font-sans font-light text-sm max-sm:text-xs"
           >
             info@coplusstudio.com
           </a>
