@@ -1,10 +1,17 @@
 
 
-## Plan: Make footer text smaller on mobile
+## Plan: Edit uploaded image to match slideshow style and add as hero-06
 
-Add responsive text sizing to the three footer elements so they shrink on small screens and fit in one line.
+The existing hero images share a moody, dark, warm-toned architectural photography aesthetic with low-key lighting. The uploaded image is brighter and more natural. It needs color grading to match.
 
 ### Changes
 
-**`src/pages/Index.tsx`** — Add `max-sm:text-xs` to all three footer text elements (the two `<p>` tags and the `<a>` tag), reducing font size on screens below 640px. Also reduce footer padding on mobile with `max-sm:p-3` to give more horizontal space.
+1. **Process the image** using Python (Pillow) to color-grade it:
+   - Reduce brightness and increase contrast to match the dark, moody tone
+   - Apply a warm color shift (slight orange/amber tint)
+   - Reduce saturation slightly for that muted, cinematic look
+   - Convert to WebP format at high quality
+   - Save as `public/images/hero-06.webp`
+
+2. **`src/pages/Index.tsx`** — Add `"/images/hero-06.webp"` to the `images` array
 
