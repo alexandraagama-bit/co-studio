@@ -50,18 +50,18 @@ const Index = () => {
       <div className="h-[calc(100vh+3cm)]" />
 
       {/* Footer */}
-      <footer className="relative p-6 max-sm:p-3 text-white/70">
-        <div className="flex justify-between items-end">
-          <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm max-sm:text-xs">
+      <footer className="relative p-6 max-sm:px-2 max-sm:py-3 text-white/70">
+        <div className="flex justify-between items-end whitespace-nowrap">
+          <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm max-sm:text-[10px]">
             architecture &amp; design
           </p>
           <a
             href="mailto:info@coplusstudio.com"
-            className="text-[rgba(251,251,251,1)] hover:opacity-80 transition-opacity font-sans font-light text-sm max-sm:text-xs"
+            className="text-[rgba(251,251,251,1)] hover:opacity-80 transition-opacity font-sans font-light text-sm max-sm:text-[10px]"
           >
             info@coplusstudio.com
           </a>
-          <p className="text-neutral-50 opacity-60 text-sm max-sm:text-xs font-thin font-sans">
+          <p className="text-neutral-50 opacity-60 text-sm max-sm:text-[10px] font-thin font-sans">
             portugal // norway // egypt
           </p>
         </div>
