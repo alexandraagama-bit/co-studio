@@ -52,7 +52,7 @@ const Index = () => {
       {/* Footer */}
       <footer className="relative p-6 max-sm:px-2 max-sm:py-3 max-[375px]:px-1 text-white/70">
         <div className="flex justify-between items-end whitespace-nowrap">
-          <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm max-sm:text-[10px]">
+          <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm max-sm:text-[10px] max-[375px]:text-[9px]">
             architecture &amp; design
           </p>
           <a
