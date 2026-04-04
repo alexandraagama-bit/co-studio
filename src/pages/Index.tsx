@@ -50,7 +50,7 @@ const Index = () => {
       <div className="h-[calc(100vh+3cm)]" />
 
       {/* Footer */}
-      <footer className="relative p-6 max-sm:px-2 max-sm:py-3 text-white/70">
+      <footer className="relative p-6 max-sm:px-2 max-sm:py-3 max-[375px]:px-1 text-white/70">
         <div className="flex justify-between items-end whitespace-nowrap">
           <p className="text-neutral-50 opacity-60 font-thin font-sans text-sm max-sm:text-[10px]">
             architecture &amp; design
