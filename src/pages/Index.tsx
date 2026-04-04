@@ -2,11 +2,10 @@ import React, { useEffect, useState } from "react";
 
 const images = [
   "/images/hero-01.webp",
-  "/images/hero-02.jpg",
+  "/images/hero-02.webp",
   "/images/hero-03.webp",
   "/images/hero-04.webp",
   "/images/hero-05.webp",
-  "/images/hero-06.webp",
 ];
 
 const Index = () => {
