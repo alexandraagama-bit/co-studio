@@ -6,6 +6,7 @@ const images = [
   "/images/hero-03.webp",
   "/images/hero-04.webp",
   "/images/hero-05.webp",
+  "/images/hero-06.webp",
 ];
 
 const Index = () => {
